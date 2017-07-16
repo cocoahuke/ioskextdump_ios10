@@ -8,7 +8,6 @@ iOS10 Edition) Dump Kext information from iOS kernel cache. Applicable to the ke
 **32bit(arm):  [ioskextdump_32](https://github.com/cocoahuke/ioskextdump_32)**
 ##### 64bit version of iOS Kernel (iOS8/iOS9):
 **64bit(arm):  [ioskextdump](https://github.com/cocoahuke/ioskextdump)**
-https://github.com/cocoahuke/ioskextdump
 ##### Dump Kext info For Mac:
 **64bit(x86_64):  [mackextdump](https://github.com/cocoahuke/mackextdump)**
 
@@ -18,7 +17,7 @@ For iOS10 kext, each type of segment of the kext are placed together in a contin
 
 I added ways to find vtable of kexts class, this become little harder by looking up in manually if in iOS10, update other functions so that it can work properly in iOS10
 
-Seems all iOS10 kernels could be easy get by use [img4tool](https://github.com/xerub/img4tool), its good news
+Seems all iOS10 kernels could be easy get by use [img4tool](https://github.com/xerub/img4tool), its a good news
 
 Please refer to [ioskextdump](https://github.com/cocoahuke/ioskextdump) for how to use it
 
