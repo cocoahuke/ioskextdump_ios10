@@ -2,7 +2,7 @@
 
 iOS10 Edition) Dump Kext information from iOS kernel cache. Applicable to the kernel which dump from memory. The disassembly framework used is [Capstone](http://www.capstone-engine.org/)
 
-[![Contact](https://img.shields.io/badge/contact-@cocoahuke-fbb52b.svg?style=flat)](https://twitter.com/cocoahuke) [![build](https://travis-ci.org/cocoahuke/ioskextdump_ios10.svg?branch=master)](https://travis-ci.org/cocoahuke/ioskextdump) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cocoahuke/ioskextdump_ios10/blob/master/LICENSE) [![paypal](https://img.shields.io/badge/Donate-PayPal-039ce0.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EQDXSYW8Z23UY)
+[![Contact](https://img.shields.io/badge/contact-@cocoahuke-fbb52b.svg?style=flat)](https://twitter.com/cocoahuke) [![build](https://travis-ci.org/cocoahuke/ioskextdump_ios10.svg?branch=master)](https://travis-ci.org/cocoahuke/ioskextdump_ios10) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cocoahuke/ioskextdump_ios10/blob/master/LICENSE) [![paypal](https://img.shields.io/badge/Donate-PayPal-039ce0.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EQDXSYW8Z23UY)
 
 ##### 32bit version of iOS Kernel (iOS8/iOS9):
 **32bit(arm):  [ioskextdump_32](https://github.com/cocoahuke/ioskextdump_32)**
@@ -15,7 +15,7 @@ This is [ioskextdump](https://github.com/cocoahuke/ioskextdump) that working for
 In the past iOS9/iOS8 kernelcache, each kext is independent, you can export all the segments into a file, all segments is defined in a continuous memory and defined in the kext 's macho header.  
 For iOS10 kext, each type of segment of the kext are placed together in a continuous memory that defined in kernel macho header (name is `__PLK*`), and also the amount of kext has increased significantly (Before more than 900, and now I tested two of the latest iOS10 kernel one is more than 1500, the other more than 1600)
 
-I added ways to find vtable of kexts class, this become little harder by looking up in manually if in iOS10, update other functions so that it can work properly in iOS10
+I added ways to find vtable of kexts class, this become little harder by looking up in manually if in iOS10, and update other functions so that it can work properly in iOS10
 
 Seems all iOS10 kernels could be easy get by use [img4tool](https://github.com/xerub/img4tool), its a good news
 
