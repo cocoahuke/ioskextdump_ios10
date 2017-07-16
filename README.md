@@ -13,7 +13,7 @@ iOS10 Edition) Dump Kext information from iOS kernel cache. Applicable to the ke
 
 This is [ioskextdump](https://github.com/cocoahuke/ioskextdump) that working for iOS10. iOS10's iOS kernel has some changes in the structure, the kext's macho header is saved in `__PRELINK_TEXT`, text segment is in `__PLK_TEXT_EXEC`, data segment is in `__PLK_DATA_CONST`/`__PRELINK_DATA`, and these segments are marked on the macho header of kernelcache.  
 In the past iOS9/iOS8 kernelcache, each kext is independent, you can export all the segments into a file, all segments is defined in a continuous memory and defined in the kext 's macho header.  
-For iOS10 kext, each type of segment of the kext are placed together in a continuous memory that defined in kernel macho header (name is `__PLK*`), and also the amount of kext has increased significantly (Before more than 900, and now I tested two of the latest iOS10 kernel one is more than 1500, the other more than 1600)
+For iOS10 kext, each type of segment of the kext are placed together in a continuous memory that defined in kernel macho header (name is `__PLK*`), and also the amount of kext has increased significantly (Before was over 900, and now I tested two of the latest iOS10 kernel one is over 1500, the other over 1600)
 
 I added ways to find vtable of kexts class, this become little harder by looking up in manually if in iOS10, and update other functions so that it can work properly in iOS10
 
