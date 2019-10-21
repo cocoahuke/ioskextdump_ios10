@@ -1,6 +1,6 @@
 # ioskextdump_ios10
 
-**All function support from iOS 10 to Latest iOS 12 kernelcache**
+**All function support from iOS 10 to Latest iOS 13 kernelcache**
 
 iOS10 Edition) Dump Kext information from iOS kernel cache. Applicable to the kernel which dump from memory. The disassembly framework used is [Capstone](http://www.capstone-engine.org/)
 
@@ -8,7 +8,7 @@ iOS10 Edition) Dump Kext information from iOS kernel cache. Applicable to the ke
 
 ##### 32bit version of iOS Kernel (iOS8/iOS9):
 **32bit(arm):  [ioskextdump_32](https://github.com/cocoahuke/ioskextdump_32)**
-##### 64bit version of iOS Kernel (iOS8/iOS9):
+##### 64bit version of iOS Kernel (iOS8/iOS9/iOS10/iOS11/iOS12/iOS13):
 **64bit(arm):  [ioskextdump](https://github.com/cocoahuke/ioskextdump)**
 ##### Dump Kext info For Mac:
 **64bit(x86_64):  [mackextdump](https://github.com/cocoahuke/mackextdump)**
